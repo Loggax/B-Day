@@ -1,0 +1,141 @@
+/* mixin usage */
+/*--------------------------------
+	Responsive ratio
+	Used for creating scalable elements that maintain the same ratio
+	example:
+	.element {
+		@include responsive-ratio(400, 300);
+	}
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(253, 144, 244);
+}
+
+.container {
+  margin: 0 auto;
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 1024px;
+    width: 100%;
+  }
+}
+
+.congra {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.congra .congraa {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 2px solid rgb(175, 0, 177);
+  border-radius: 15px;
+  padding: 20px;
+}
+.congra .congraa img {
+  position: absolute;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  top: -170px;
+}
+@media (min-width: 321px) {
+  .congra .congraa img {
+    top: -233px;
+  }
+}
+@media (min-width: 768px) {
+  .congra .congraa img {
+    top: -300px;
+  }
+}
+.congra h1 {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  color: rgb(175, 0, 177);
+  font-size: 24px;
+}
+@media (min-width: 768px) {
+  .congra h1 {
+    font-size: 34px;
+    width: 60%;
+  }
+}
+.congra p {
+  text-align: center;
+  color: rgb(175, 0, 177);
+  font-size: 20px;
+}
+@media (min-width: 768px) {
+  .congra p {
+    font-size: 24px;
+  }
+}
+
+.videos {
+  margin-bottom: 40px;
+}
+.videos .desc {
+  text-align: center;
+  color: rgb(175, 0, 177);
+  font-size: 34px;
+  margin-bottom: 40px;
+}
+.videos .video {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.videos .video iframe {
+  border-radius: 10px;
+  border: 2px solid rgb(175, 0, 177);
+}
+.videos .video iframe:first-child {
+  margin-bottom: 20px;
+}
+
+.wishes {
+  margin-bottom: 40px;
+}
+.wishes p {
+  text-align: center;
+  color: rgb(175, 0, 177);
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.wishes .btn-wishes p {
+  font-size: 34px;
+}
+.wishes .btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.wishes .btn button {
+  width: 250px;
+  height: 50px;
+  margin: 0 auto;
+  color: rgb(175, 0, 177);
+  border-radius: 10px;
+  border: 2px solid rgb(175, 0, 177);
+  background-color: transparent;
+  font-size: 20px;
+  transition: 0.4s ease-in-out;
+}
+.wishes .btn button:hover {
+  background-color: rgb(175, 0, 177);
+  color: rgb(253, 144, 244);
+}
+/*# sourceMappingURL=main.css.map */

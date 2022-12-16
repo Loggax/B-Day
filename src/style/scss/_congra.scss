@@ -1,0 +1,121 @@
+.congra {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .congraa {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border: 2px solid rgb(175, 0, 177);
+        border-radius: 15px;
+        padding: 20px;
+
+        img {
+            position: absolute;
+            max-width: 500px;
+            width: 100%;
+            margin: 0 auto;
+            top: -170px;
+
+            @include media (">phone") {
+                top: -233px;
+            }
+
+            @include media (">=tablet") {
+                top: -300px;
+            }
+        }
+    }
+
+    h1 {
+        
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        color: rgb(175, 0, 177);
+        font-size: 24px;
+
+        @include media (">=tablet") {
+            font-size: 34px;
+            width: 60%;
+        }
+    }
+
+    p {
+        text-align: center;
+        color: rgb(175, 0, 177);
+        font-size: 20px;
+
+        @include media (">=tablet") {
+            font-size: 24px;
+        }
+    }
+}
+
+.videos {
+    margin-bottom: 40px;
+    .desc {
+        text-align: center;
+        color: rgb(175, 0, 177);
+        font-size: 34px;
+        margin-bottom: 40px;
+    }
+
+    .video {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        iframe {
+            border-radius: 10px;
+            border: 2px solid rgb(175, 0, 177);
+        }
+
+        iframe:first-child {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.wishes {
+    margin-bottom: 40px;
+
+    p {
+        text-align: center;
+        color: rgb(175, 0, 177);
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .btn-wishes p {
+        font-size: 34px;
+    }
+
+    .btn {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        button {
+            width: 250px;
+            height: 50px;
+            margin: 0 auto;
+            color: rgb(175, 0, 177);
+            border-radius: 10px;
+            border: 2px solid rgb(175, 0, 177);
+            background-color: transparent;
+            font-size: 20px;
+            transition: .4s ease-in-out;
+
+            &:hover {
+                background-color: rgb(175, 0, 177);
+                color: rgb(253, 144, 244);
+            }
+        }
+    }
+
+    
+}
