@@ -3,7 +3,7 @@ function randomInteger(min, max) {
 }
 
 function fuck() {
-    let b = randomInteger(1, 30);
+    let b = randomInteger(1, 10);
     console.log(b);
 
     let arr =["Знай - ти чудова!", "Не думай - дій!", "Завтра буде краще, ніж сьогодні!", "Знайте, Захарко про вас пам'ятає!", "Ти зможеш, я вірю в тебе!",
